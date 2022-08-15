@@ -7,6 +7,7 @@
 C_SRCS += \
 ../Core/Src/env_sensor.c \
 ../Core/Src/environmental_data.c \
+../Core/Src/fertilizer_mixer_client.c \
 ../Core/Src/main.c \
 ../Core/Src/stm32f4xx_hal_msp.c \
 ../Core/Src/stm32f4xx_it.c \
@@ -17,6 +18,7 @@ C_SRCS += \
 OBJS += \
 ./Core/Src/env_sensor.o \
 ./Core/Src/environmental_data.o \
+./Core/Src/fertilizer_mixer_client.o \
 ./Core/Src/main.o \
 ./Core/Src/stm32f4xx_hal_msp.o \
 ./Core/Src/stm32f4xx_it.o \
@@ -27,6 +29,7 @@ OBJS += \
 C_DEPS += \
 ./Core/Src/env_sensor.d \
 ./Core/Src/environmental_data.d \
+./Core/Src/fertilizer_mixer_client.d \
 ./Core/Src/main.d \
 ./Core/Src/stm32f4xx_hal_msp.d \
 ./Core/Src/stm32f4xx_it.d \

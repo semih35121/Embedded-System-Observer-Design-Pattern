@@ -1,0 +1,6 @@
+fertilizer_mixer_client.c:12:6:fertilizer_mixer_client_init	16	static
+fertilizer_mixer_client.c:15:28:fertilizer_mixer_client_create	16	static
+fertilizer_mixer_client.c:25:6:fertilizer_mixer_client_handlenewdata	32	static
+fertilizer_mixer_client.c:37:6:fertilizer_mixer_client_subscribe	24	static
+fertilizer_mixer_client.c:60:6:fertilizer_mixer_client_unsubscribe	24	static
+fertilizer_mixer_client.c:70:6:fertilizer_mixer_client_destroy	16	static

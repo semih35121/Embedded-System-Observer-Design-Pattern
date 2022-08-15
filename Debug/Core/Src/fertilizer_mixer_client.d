@@ -1,5 +1,6 @@
-Core/Src/env_sensor.o: ../Core/Src/env_sensor.c ../Core/Inc/env_sensor.h \
- ../Core/Inc/environmental_data.h \
+Core/Src/fertilizer_mixer_client.o: ../Core/Src/fertilizer_mixer_client.c \
+ ../Core/Inc/fertilizer_mixer_client.h ../Core/Inc/env_sensor.h \
+ ../Core/Inc/environmental_data.h ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -27,9 +28,13 @@ Core/Src/env_sensor.o: ../Core/Src/env_sensor.c ../Core/Inc/env_sensor.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 
+../Core/Inc/fertilizer_mixer_client.h:
+
 ../Core/Inc/env_sensor.h:
 
 ../Core/Inc/environmental_data.h:
+
+../Core/Inc/main.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 

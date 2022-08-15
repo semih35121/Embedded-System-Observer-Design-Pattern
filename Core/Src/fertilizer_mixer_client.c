@@ -67,5 +67,8 @@ void fertilizer_mixer_client_unsubscribe(fertilizer_mixer_client_t *const me,env
 	}
 
 }
+void fertilizer_mixer_client_destroy(fertilizer_mixer_client_t *const me){
+	free(me);
+}
 
 
