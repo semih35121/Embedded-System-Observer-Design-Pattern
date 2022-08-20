@@ -1,4 +1,4 @@
-env_sensor.c:15:6:env_sensor_init	24	static
+env_sensor.c:14:13:env_sensor_init	24	static
 env_sensor.c:22:15:env_sensor_create	16	static
 env_sensor.c:31:6:env_sensor_get_data	16	static
 env_sensor.c:38:6:env_sensor_notify	32	static

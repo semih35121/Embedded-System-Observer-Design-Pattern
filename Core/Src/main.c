@@ -19,6 +19,11 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "environmental_data.h"
+#include "fertilizer_mixer_client.h"
+#include "env_sensor.h"
+#include "Display_client.h"
+#include <stdio.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -93,6 +98,19 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  env_sensor_t * mysensorserver=env_sensor_create();
+  fertilizer_mixer_client_t * fertilizer_device=fertilizer_mixer_client_create();
+  fertilizer_mixer_client_subscribe(fertilizer_device, mysensorserver);
+  display_client_t *mydisplayclient=display_client_create();
+  display_client_subscribe(mydisplayclient, mysensorserver);
+  env_sensor_get_data(mysensorserver);
+  env_sensor_get_data(mysensorserver);
+  env_sensor_dumplist(mysensorserver);
+  fertilizer_mixer_client_unsubscribe(fertilizer_device, mysensorserver);
+env_sensor_get_data(mysensorserver);
+env_sensor_dumplist(mysensorserver);
+
+
 
   /* USER CODE END 2 */
 
@@ -103,6 +121,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
   }
   /* USER CODE END 3 */
 }

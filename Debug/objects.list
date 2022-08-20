@@ -1,3 +1,4 @@
+"./Core/Src/Display_client.o"
 "./Core/Src/env_sensor.o"
 "./Core/Src/environmental_data.o"
 "./Core/Src/fertilizer_mixer_client.o"

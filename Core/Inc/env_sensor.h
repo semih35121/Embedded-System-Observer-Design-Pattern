@@ -23,7 +23,7 @@ typedef struct env_sensor{
 	notify_handler_t clients[MAX_CLIENT];
 }env_sensor_t;
 
-void env_sensor_init(env_sensor_t * const me);
+
 env_sensor_t * env_sensor_create(void);
 void env_sensor_get_data(env_sensor_t * const me);
 void env_sensor_notify(env_sensor_t * const me);

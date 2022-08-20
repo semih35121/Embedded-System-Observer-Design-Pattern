@@ -11,11 +11,11 @@
 #include <stm32f4xx.h>
 extern UART_HandleTypeDef huart2;
 
-
-void env_sensor_init(env_sensor_t *const me) {
+static void env_sensor_init(env_sensor_t *const me) {
 	for (int i = 0; i < MAX_CLIENT; i++) {
 		me->clients[i].fn_handler = NULL;
 		me->clients[i].pobject = NULL;
+		me->n_client=0;
 	}
 
 }
@@ -56,6 +56,7 @@ void env_sensor_dumplist(env_sensor_t *const me) {
 }
 void env_sensor_destroy(env_sensor_t *const me) {
 	//Do something
+	printf("Sensor server has destroyed\r\n");
 	free(me);
 
 }

@@ -10,8 +10,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 typedef struct environmental_data{
-	uint32_t temperature;
-	uint32_t humudity;
+	int  temperature;
+	int  humudity;
 	bool sprayed;
 }environmental_data_e;
 

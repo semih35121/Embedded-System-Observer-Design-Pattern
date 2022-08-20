@@ -1,0 +1,7 @@
+Display_client.c:16:6:display_client_init	16	static
+Display_client.c:19:20:display_client_create	16	static
+Display_client.c:30:6:logspecifieddata	16	static
+Display_client.c:36:6:display_client_handlenewdata	32	static
+Display_client.c:50:6:display_client_subscribe	24	static
+Display_client.c:74:6:display_client_unsubscribe	24	static
+Display_client.c:85:6:display_client_destroy	16	static

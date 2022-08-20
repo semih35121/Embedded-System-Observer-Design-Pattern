@@ -5,6 +5,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/Display_client.c \
 ../Core/Src/env_sensor.c \
 ../Core/Src/environmental_data.c \
 ../Core/Src/fertilizer_mixer_client.c \
@@ -16,6 +17,7 @@ C_SRCS += \
 ../Core/Src/system_stm32f4xx.c 
 
 OBJS += \
+./Core/Src/Display_client.o \
 ./Core/Src/env_sensor.o \
 ./Core/Src/environmental_data.o \
 ./Core/Src/fertilizer_mixer_client.o \
@@ -27,6 +29,7 @@ OBJS += \
 ./Core/Src/system_stm32f4xx.o 
 
 C_DEPS += \
+./Core/Src/Display_client.d \
 ./Core/Src/env_sensor.d \
 ./Core/Src/environmental_data.d \
 ./Core/Src/fertilizer_mixer_client.d \
